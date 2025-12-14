@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastin Alizadeh - Developer, Designer & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="terminal-style.css">
+</head>
+<body>
+
+    <div class="ide-window">
+        <header class="ide-header">
+            <div class="traffic-lights">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+            <div class="title-bar">Rastin Alizadeh - Resume</div>
+        </header>
+
+        <nav class="ide-tabs">
+            <div class="ide-tab active" data-target="home">README.md</div>
+            <div class="ide-tab" data-target="about">about_me.py</div>
+            <div class="ide-tab" data-target="skills">skills_showcase.js</div>
+            <div class="ide-tab" data-target="experience">experience.log</div>
+            <div class="ide-tab" data-target="contact">contact.json</div>
+        </nav>
+
+        <main class="ide-main-content">
+            <aside class="ide-sidebar" id="skillsSidebar">
+                <h4>Skills Navigator</h4>
+                <ul id="skillsListForSidebar">
+                    </ul>
+            </aside>
+            <div class="terminal-content" id="terminalContent">
+                <div class="boot-sequence" id="bootSequence">
+                    <div></div> </div>
+
+                <div class="section" id="home">
+                    </div>
+
+                <div class="section" id="about">
+                    <span class="prompt">RastinAlizadeh $</span> <span class="command">cat ./about_me.py</span>
+                    <div class="output">
+                        <h2># about_me.py</h2>
+                        <div class="code-block">
+<pre><span class="comment"># Personal Information for Rastin Alizadeh</span>
+
+<span class="variable">name</span> = <span class="string">"Rastin Alizadeh"</span>
+<span class="variable">title</span> = <span class="string">"Developer, Designer & Content Creator"</span>
+<span class="variable">date_of_birth</span> = <span class="string">"June 2007"</span>
+<span class="variable">location</span> = <span class="string">"Kashan, Iran"</span>
+
+<span class="keyword">def</span> <span class="function">get_bio</span>():
+    <span class="variable">bio</span> = <span class="string">"""
+    I'm a developer and designer who navigates the world of code, pixels, and content. For me, 
+    a project isn't just a set of code; it's a complete experience. That's why I focus on 
+    three core areas: <strong>programming</strong> to build strong logic, <strong>design</strong> 
+    to create a beautiful and user-friendly interface, and <strong>content creation</strong> 
+    to tell the product's story.
+
+    This journey began with teenage curiosity and participation in science festivals, and today 
+    it has led to building real web applications, designing for businesses, and managing digital 
+    projects. Every project, from a simple Telegram bot to a complete e-commerce website, is a 
+    new opportunity for me to turn challenges into creative solutions.
+    """</span>
+    <span class="keyword">return</span> <span class="variable">bio</span>
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    <span class="function">print</span>(<span class="string">f"Name: {name}"</span>)
+    <span class="function">print</span>(<span class="string">f"Title: {title}"</span>)
+    <span class="function">print</span>(<span class="string">"\n--- Bio ---"</span>)
+    <span class="function">print</span>(<span class="function">get_bio</span>())
+</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="skills">
+                    <span class="prompt">RastinAlizadeh $</span> <span class="command">./run_skills_showcase.js</span>
+                    <div class="output">
+                        <h2>// Skills Showcase</h2>
+                        <p>My technical skill set is diverse, covering various aspects of development. Click on a skill in the sidebar to see an example.</p>
+                        
+                        <ul class="skills-list" id="skillsList">
+                            <!-- Skills will be populated by JS -->
+                        </ul>
+                        
+                        <div id="skillDetailView">
+                            <p class="text-gray-500 italic mt-4">Select a skill from the sidebar to view a code example.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="experience">
+                    <span class="prompt">RastinAlizadeh $</span> <span class="command">tail -f experience.log</span>
+                    <div class="output">
+                        <h2>[EDUCATION & EXPERIENCE_LOG]</h2>
+
+                        <h3>Education</h3>
+                        <div class="job-entry">
+                            <h3 class="job-title">Shahid Beheshti High School (SAMPAD)</h3>
+                            <p class="job-company">Middle & High School</p>
+                            <p class="job-dates">2019 — 2025</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Studied at Shahid Beheshti High School (SAMPAD) for both middle and high school periods.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Isfahan National University of Skills (Shahid Mohajer)</h3>
+                            <p class="job-company">Professional Computer Engineering (Bachelor)</p>
+                            <p class="job-dates">2025 — Present</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Currently studying at Isfahan National University of Skills.</li>
+                            </ul>
+                        </div>
+
+                        <h3>Experience & Achievements</h3>
+                        
+                        <div class="job-entry">
+                            <h3 class="job-title">Full Design and Support for Maral Setareh Website</h3>
+                            <p class="job-company">Maral Setareh Tourism and Recreation Complexes</p>
+                            <p class="job-dates">2024 — Present</p>
+                             <ul class="list-disc list-inside job-description">
+                                <li>Full design of the WordPress website, along with technical support and implementation of initial SEO strategies.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">National Silver Medal at Farda Cultural and Arts Festival</h3>
+                            <p class="job-company">Farda Festival</p>
+                            <p class="job-dates">2024 — 2025</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Won the national silver medal in the website design category for the "Maral Setareh Website" and "Makhmali Introduction Blog" projects.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Provincial Gold Medal at Iran Schools' Cultural and Arts Festival</h3>
+                            <p class="job-company">Iran Schools' Festival</p>
+                            <p class="job-dates">2024 — 2025</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Won the gold medal in the poster and graphic logo design category.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Interview with Isfahan Education Magazine</h3>
+                            <p class="job-company">"Parto-e Mehr" Student Monthly</p>
+                            <p class="job-dates">2024 — 2025</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Interviewed with the magazine team, with three pages dedicated to "Rastin's Digital Dream" regarding the "Me-Too" web application.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Participation in SAMPAD Achievements Conference</h3>
+                            <p class="job-company">SAMPAD Research Conference</p>
+                            <p class="job-dates">2024 — 2025</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Participated as a project presenter, showcasing the "Me-Too" web application.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Provincial Gold at Farda Festival</h3>
+                            <p class="job-company">Farda Cultural and Arts Festival</p>
+                            <p class="job-dates">2023 — 2024</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Presented the "Me-Too" web application and won the provincial gold medal.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Organizing NetKa 22 Conference</h3>
+                            <p class="job-company">NetKa Conference</p>
+                            <p class="job-dates">2023 — 2024</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Organized the conference as the scientific secretary, officially launching and presenting the "Me-Too" web application.</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Participation in NetKa 21, 20, 19 Conferences</h3>
+                            <p class="job-company">NetKa Conference</p>
+                            <p class="job-dates">2020 — 2023</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Participated as a project presenter, showcasing "Toolbox", "Epic Assistant", and "Alpha-Bot".</li>
+                            </ul>
+                        </div>
+
+                        <div class="job-entry">
+                            <h3 class="job-title">Provincial Gold at Kharazmi Festival</h3>
+                            <p class="job-company">Kharazmi Youth Festival</p>
+                            <p class="job-dates">2020 — 2021</p>
+                            <ul class="list-disc list-inside job-description">
+                                <li>Presented the "Toolbox" desktop application and won the provincial gold medal.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="section" id="contact">
+                    <span class="prompt">RastinAlizadeh $</span> <span class="command">jq . &lt; contact.json</span>
+                    <div class="output">
+                        <h2>{ "contactInformation": { ... } }</h2>
+                        <div class="code-block">
+<pre>{
+  <span class="string">"name"</span>: <span class="string">"Rastin Alizadeh"</span>,
+  <span class="string">"email"</span>: <span class="string">"therealseyed@gmail.com"</span>,
+  <span class="string">"phone"</span>: <span class="string">"+989333006301"</span>,
+  <span class="string">"profiles"</span>: [
+    {
+      <span class="string">"network"</span>: <span class="string">"GitHub"</span>,
+      <span class="string">"url"</span>: <span class="string">"https://github.com/raastin"</span>
+    },
+    {
+      <span class="string">"network"</span>: <span class="string">"LinkedIn"</span>,
+      <span class="string">"url"</span>: <span class="string">"https://linkedin.com/in/raastin"</span>
+    },
+    {
+      <span class="string">"network"</span>: <span class="string">"Telegram"</span>,
+      <span class="string">"url"</span>: <span class="string">"https://t.me/raastin"</span>
+    },
+    {
+      <span class="string">"network"</span>: <span class="string">"Instagram"</span>,
+      <span class="string">"url"</span>: <span class="string">"https://www.instagram.com/raastin/"</span>
+    }
+  ]
+}
+</pre>
+                        </div>
+                        <div class="contact-info mt-4">
+                            <p><strong>Email:</strong> <a href="mailto:therealseyed@gmail.com">therealseyed@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:+989333006301">+98 933 300 6301</a></p>
+                            <p>You can also find me on <a href="https://github.com/raastin" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://linkedin.com/in/raastin" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://t.me/raastin" target="_blank" rel="noopener noreferrer">Telegram</a>, and <a href="https://www.instagram.com/raastin/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="terminal-script.js"></script>
+</body>
+</html>
