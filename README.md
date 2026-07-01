@@ -2,6 +2,8 @@
 
 A simple and interactive CV/resume website with a terminal theme. This project uses HTML, CSS, and vanilla JavaScript to create a simulated terminal interface where you can display your professional information.
 
+![TerminalCV Banner](banner.jpg)
+
 ## Features
 
 -   **Interactive Terminal:** A CLI-style interface to navigate your resume.
@@ -57,5 +59,4 @@ To make this your own CV, you'll primarily need to edit the `terminal-script.js`
     };
     ```
 3.  **(Optional) Modify Styles:** Open `terminal-style.css` to change colors, fonts, spacing, or anything else related to the visual appearance of the terminal.
-
 
